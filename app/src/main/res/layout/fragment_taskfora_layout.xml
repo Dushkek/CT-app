@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/taskForATextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="TASK"
+                android:padding="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <TextView
+                android:id="@+id/firstAnswerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="answer_1"
+                android:padding="5dp"
+                app:layout_constraintTop_toBottomOf="@id/taskForATextView"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/firstAnswerTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+             <TextView
+                android:id="@+id/secondAnswerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 tools:text="answer_2"
+                 app:layout_constraintTop_toBottomOf="@id/firstAnswerTextView"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/secondAnswerTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+             <TextView
+                android:id="@+id/thirdAnswerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 tools:text="answer_3"
+                 android:padding="5dp"
+                 app:layout_constraintTop_toBottomOf="@id/secondAnswerTextView" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/thirdAnswerTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+             <TextView
+                android:id="@+id/fourthAnswerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 tools:text="answer_4"
+                 app:layout_constraintTop_toBottomOf="@id/thirdAnswerTextView"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/fourthAnswerTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/fifthAnswerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                tools:text="answer_5"
+                app:layout_constraintTop_toBottomOf="@id/fourthAnswerTextView" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

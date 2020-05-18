@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/numberOfTask"
+    android:layout_width="38dp"
+    android:layout_height="38dp"
+    android:gravity="center"
+    android:background="@drawable/navigation_item_background"
+    android:textSize="10sp"
+    tools:text="A1">
+
+
+
+</TextView>
+

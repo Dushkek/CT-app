@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/books">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7DDDD"
+        android:text="@string/information_about_ct"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/text1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/numberOfTasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/textview_info_layout"
+                android:drawableEnd="@drawable/icon_turnright"
+                android:padding="12dp"
+                android:text="@string/numberOfTasks"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ctInCities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_info_layout"
+                android:text="@string/registration"
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:drawableEnd="@drawable/icon_turnright"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/numberOfTasks"
+                />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_info_layout"
+                android:text="@string/information_about_ct"
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:drawableEnd="@drawable/icon_turnright"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/ctInCities"
+                />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_info_layout"
+                android:text="@string/information_about_ct"
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:drawableEnd="@drawable/icon_turnright"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/text4"
+                />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_info_layout"
+                android:text="@string/information_about_ct"
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:drawableEnd="@drawable/icon_turnright"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/text5"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

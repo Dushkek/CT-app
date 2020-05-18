@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ЦТ</string>
+    <string name="start">Начать</string>
+    <string name="information_about_ct">Информация о ЦТ</string>
+    <string name="online_school_subject_tests">Онлайн тесты по школьным предметам</string>
+    <string name="numberOfTasks">Количество тестовых заданий по учебным предметам и время, отведенное на их выполнение</string>
+    <string name="registration">Перечень пунктов регистрации и проведения ЦТ 2020 года</string>
+    <string name="finish">Завершить</string>
+    <string name="next">Следующий</string>
+    <string name="previous">Предыдущий</string>
+    <string name="answer">Ответить</string>
+
+
+    <string name="banner_ad_unit_id">ca-app-pub-6870964481922764/2350819953</string>
+</resources>
