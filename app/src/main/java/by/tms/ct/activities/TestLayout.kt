@@ -28,9 +28,8 @@ class TestLayout : AppCompatActivity(), AdapterView.OnItemClickListener{
     private val third = ArrayList<String>()
     private val fourth = ArrayList<String>()
     private val fifth = ArrayList<String>()
-    val bAnswersList= arrayOf("B1","B2","B3","B4","B5","B6","B7","B8","B9","B10","A10")
-    val rightAnswers = ArrayList<String>()
-
+    private val bAnswersList= arrayOf("B1","B2","B3","B4","B5","B6","B7","B8","B9","B10","A10")
+    private val rightAnswers = ArrayList<String>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,14 +65,11 @@ class TestLayout : AppCompatActivity(), AdapterView.OnItemClickListener{
 
 
 
-
-
     }
 
+
+
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-
-//        var result: List<String> = rightAnswers[position].split(",").map { it.trim() }
-
 
         if(gridViewWidget[position].isInTouchMode){
             gridViewWidget.forEach {
@@ -92,9 +88,10 @@ class TestLayout : AppCompatActivity(), AdapterView.OnItemClickListener{
                 taskForBTextView?.text = tasks[position]
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.landscapeFragment, fragmentForB)
+                    .addToBackStack(null)
                     .commit()
             }
-            else-> {
+            else -> {
 
                 taskForATextView?.text = tasks[position]
                 firstAnswerTextView?.text = firstans[position]
@@ -104,10 +101,25 @@ class TestLayout : AppCompatActivity(), AdapterView.OnItemClickListener{
                 fifthAnswerTextView?.text = fifth[position]
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.landscapeFragment, fragmentForA)
+                    .addToBackStack(null)
                     .commit()
             }
+        }
+
+
+
+
+        var result: List<String> = rightAnswers[position].split(",").map { it.trim() }
+
+        endButton.setOnClickListener {
 
         }
+
+       if(solveButton.isActivated){
+           rightAnswers[position] = answerEditText.text.toString()
+           numOfTask[position] = numOfTask[position+1]
+       }
+
 
 
     }
